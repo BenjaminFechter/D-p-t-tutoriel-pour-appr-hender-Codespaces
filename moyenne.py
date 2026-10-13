@@ -10,7 +10,12 @@ def moyenne(valeurs):
     # docstrings en markdown
     """
     # Calcule la moyenne des valeurs.
-
+    if len(valeurs)==0:
+        print('ValueError')
+    m=0
+    for i in range(valeurs):
+        m += valeurs(i)
+    m= m/len(valeurs)
     **Paramètres**
     - `valeurs` : valeurs dont on veut calculer la moyenne
 
@@ -22,7 +27,7 @@ def moyenne(valeurs):
 
     ---
     """
-    print("!! TODO : Compléter la fonction moyenne !!", end=" ")
+    print("la moyenne est de ", end="m ")
     pass
 
 
